@@ -32,7 +32,7 @@
                      <ClickTracking id="123">http://www.example.com/click</ClickTracking>
                   </VideoClicks>
                   <MediaFiles>
-                     <MediaFile apiFramework="VPAID" width="320" height="240" type="application/javascript">https://ademartini.github.io/vpaid-wrapper.min.js</MediaFile>
+                     <MediaFile apiFramework="VPAID" width="320" height="240" type="application/javascript">https://ademartini.github.io/wrapper/vpaid-wrapper.min.js</MediaFile>
                   </MediaFiles>
                </Linear>
             </Creative>
