@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd" version="3.0">
+   <Ad id="1234567">
+      <InLine>
+         <AdSystem>GDFP</AdSystem>
+         <AdTitle>Linear VPAID Example</AdTitle>
+         <Description>Vpaid Linear Video Ad</Description>
+         <Error>http://www.example.com/error</Error>
+         <Impression>http://www.example.com/impression</Impression>
+         <Creatives>
+            <Creative sequence="1">
+               <Linear>
+                  <Duration>00:00:13</Duration>
+                  <TrackingEvents>
+                     <Tracking event="start">http://www.example.com/start</Tracking>
+                     <Tracking event="firstQuartile">http://www.example.com/firstQuartile</Tracking>
+                     <Tracking event="midpoint">http://www.example.com/midpoint</Tracking>
+                     <Tracking event="thirdQuartile">http://www.example.com/thirdQuartile</Tracking>
+                     <Tracking event="complete">http://www.example.com/complete</Tracking>
+                     <Tracking event="mute">http://www.example.com/mute</Tracking>
+                     <Tracking event="unmute">http://www.example.com/unmute</Tracking>
+                     <Tracking event="rewind">http://www.example.com/rewind</Tracking>
+                     <Tracking event="pause">http://www.example.com/pause</Tracking>
+                     <Tracking event="resume">http://www.example.com/resume</Tracking>
+                     <Tracking event="fullscreen">http://www.example.com/fullscreen</Tracking>
+                     <Tracking event="creativeView">http://www.example.com/creativeView</Tracking>
+                     <Tracking event="acceptInvitation">http://www.example.com/acceptInvitation</Tracking>
+                  </TrackingEvents>
+                  <AdParameters><![CDATA[{"url":"https://vast.mathtag.com/?debug=1&exch=brx&id=asfasf&sid=111666111&cid=3260391&price=12&protocol_version=1&aid=123&adverid=123"}]]></AdParameters>
+                  <VideoClicks>
+                     <ClickThrough id="123">http://google.com</ClickThrough>
+                     <ClickTracking id="123">http://www.example.com/click</ClickTracking>
+                  </VideoClicks>
+                  <MediaFiles>
+                     <MediaFile apiFramework="VPAID" width="320" height="240" type="application/javascript">https://ademartini.github.io/vpaid-wrapper.min.js</MediaFile>
+                  </MediaFiles>
+               </Linear>
+            </Creative>
+            <Creative id="3260391_companion" sequence="1">
+                 <CompanionAds>
+                     <Companion id="companion_1" width="300" height="600">
+                         <IFrameResource><![CDATA[https://bs.serving-sys.com/BurstingPipe/adServer.bs?cn=rsb&c=28&pli=16990627&PluID=0&w=300&h=250&ord=1732165810864440320&ucm=true&ncu=$$[ENCODED_CLICK_REDIRECT]$$&z=0]]></IFrameResource>
+                     </Companion>
+                     <Companion id="companion_2" width="300" height="600">
+                         <HTMLResource><![CDATA[<script language="javascript" type="text/javascript"> new function() { this.rand = Math.floor((Math.random() + """") * 1000000000000); this.dvparams = 'ctx=2283957&cmp=9964819&plc=133938478&sid=1781226'; this.dvregion = '0'; this.tagsrc = '<scr'+'ipt language=\'Javascr'+'ipt1.1\' SRC=""https://ad.doubleclick.net/ddm/adj/N3674.367123DOUBLEPOSITIVE.COM/B9964819.133938478;sz=300x600;click=[UNENCODED_CLICK_REDIRECT];ord=1732165810864440320;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?"">\n</scr'+'ipt>\n<NOscr'+'ipt>\n<A HREF=""[UNENCODED_CLICK_REDIRECT]https://ad.doubleclick.net/ddm/jump/N3674.367123DOUBLEPOSITIVE.COM/B9964819.133938478;sz=300x600;ord=1732165810864440320?"">\n<IMG SRC=""https://ad.doubleclick.net/ddm/ad/N3674.367123DOUBLEPOSITIVE.COM/B9964819.133938478;sz=300x600;click=[UNENCODED_CLICK_REDIRECT];ord=1732165810864440320;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?"" BORDER=0 WIDTH=300 HEIGHT=600 ALT=""Advertisement""></A>\n</NOscr'+'ipt>'; this.altsrc = '<style>\n .container {\n border: 1px solid #3b599e;\n overflow: hidden;\n filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=\'#315d8c\', endColorstr=\'#84aace\'); /* for IE */\n background: -webkit-gradient(linear, left top, left bottom, from(#315d8c), to(#84aace)); /* for webkit browsers */\n background: -moz-linear-gradient(top, #315d8c, #84aace); /* for firefox 3.6+ */ \n }\n .cloud {\n color: #fff;\n position: relative;\n font: 100% ""Times New Roman"", Times, serif;\n text-shadow: 0px 0px 10px #fff;\n line-height: 0;\n }\n </style>\n <scr'+'ipt type=""text/javascr'+'ipt"">\n function cloud(){\n var b1 = ""<div class=\\""cloud\\"" style=\\""font-size: "";\n var b2 = ""px; position: absolute; top: "";\n document.write(b1+""300px; width: 300px; height: 300""+b2+""34px; left: 28px;\\"">.<\\/div>"");\n document.write(b1+""300px; width: 300px; height: 300""+b2+""46px; left: 10px;\\"">.<\\/div>"");\n document.write(b1+""300px; width: 300px; height: 300""+b2+""46px; left: 50px;\\"">.<\\/div>"");\n document.write(b1+""400px; width: 400px; height: 400""+b2+""24px; left: 20px;\\"">.<\\/div>"");\n }\n function clouds(){\n var top = [\'-80\',\'80\',\'240\',\'400\'];\n var left = -10;\n var a1 = ""<div style=\\""position: relative; top: "";\n var a2 = ""px; left: "";\n var a3 = ""px;\\""><scr'+'ipt type=\\""text/javascr'+'ipt\\"">cloud();<\\/scr'+'ipt><\\/div>"";\n for(i=0; i<8; i++)\n {\n document.write(a1+top[0]+a2+left+a3);\n document.write(a1+top[1]+a2+left+a3);\n document.write(a1+top[2]+a2+left+a3);\n document.write(a1+top[3]+a2+left+a3); \n if(i==4)\n {\n left = -90;\n top = [\'0\',\'160\',\'320\',\'480\'];\n }\n else left += 160;\n }\n }\n </scr'+'ipt>\n<div class=""container"" style=""width: 300px; height: 600px;"">\n <scr'+'ipt type=""text/javascr'+'ipt"">clouds();</scr'+'ipt>\n</div>'; this.callbackName = '__dvredirect_callback_' + this.rand; var thisRedirect = this; window[this.callbackName] = function () { return thisRedirect; }; var src = 'https://rtbcdn.doubleverify.com/bsredirect5.js?callback=' + this.callbackName; document.write('<scr' + 'ipt src=""' + src + '"" type=""text/javascript""></scr' + 'ipt>'); } </script>]]></HTMLResource>
+                     </Companion>
+                 </CompanionAds>
+            </Creative>
+         </Creatives>
+      </InLine>
+   </Ad>
+</VAST>
