@@ -30,12 +30,15 @@
                      {
                         "url":"https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dlinear&correlator=",
                         "bidUrl":"__VPAID_AD_PARAMETERS.BID_URL__",
+                        "iasEnabled":"false",
                         "dvEnabled":"true",
                         "advertiserId":"__AD_ATTR.advertiser__",
                         "strategyId":"__AD_ATTR.strategy__",
                         "exchangeId":"__BID_ATTR.exchange__",
                         "creativeId":"__AD_ATTR.creative__",
-                        "auctionId":"__BID_ATTR.bid_id__"
+                        "auctionId":"__MM_AUCTION_ID__",
+                        "campaignId":"__AD_ATTR.campaign__",
+                        "siteId":"__BID_ATTR.site_id__"
                      }
                      ]]></AdParameters>
                   <VideoClicks>
@@ -43,7 +46,7 @@
                      <ClickTracking id="123">http://www.example.com/click</ClickTracking>
                   </VideoClicks>
                   <MediaFiles>
-                     <MediaFile apiFramework="VPAID" width="320" height="240" type="application/javascript">https://ademartini.github.io/wrapper/vpaid-wrapper-dv.min.js</MediaFile>
+                     <MediaFile apiFramework="VPAID" width="320" height="240" type="application/javascript">https://ademartini.github.io/wrapper/vpaid-wrapper.min.js</MediaFile>
                   </MediaFiles>
                </Linear>
             </Creative>
